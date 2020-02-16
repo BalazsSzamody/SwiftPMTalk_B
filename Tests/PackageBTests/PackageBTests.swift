@@ -3,10 +3,8 @@ import XCTest
 
 final class PackageBTests: XCTestCase {
     func testExample() {
-        // This is an example of a functional test case.
-        // Use XCTAssert and related functions to verify your tests produce the correct
-        // results.
-        XCTAssertEqual(PackageB().text, "Hello, World!")
+        let input = "PackageB"
+        XCTAssertEqual(PackageB.text(input), "Hello, PackageB!")
     }
 
     static var allTests = [
